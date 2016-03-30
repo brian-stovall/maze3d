@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+    height:100vh;
+    width:100vw;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    height:100%;
+    width:100%;
+}
+
+#container {
+    perspective: 30em;
+    position: absolute;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+
+.wall {
+    position: absolute;
+    background-color:darkgreen;
+    border: 3px solid white;
+    height: 50%;
+    width: 50%;
+}
+
+#far-flat-center {
+    transform: translateY(50%) translateX(50%) translateZ(-50rem);
+}
+
+#far-flat-left {
+    transform: translateY(50%) translateX(-50%) translateZ(-50rem);
+}
+
+#far-flat-right {
+   transform: translateY(50%) translateX(150%) translateZ(-50rem);
+}
+
+#far-left {
+   transform: translateY(50%) translateX(0%) translateZ(-35rem) rotateY(90deg);
+}
+
+#far-right {
+    transform: translateY(50%) translateX(100%) translateZ(-35rem) rotateY(90deg);
+}
+
+#mid-flat-center {
+    transform: translateY(50%) translateX(50%) translateZ(-20rem);
+}
+
+#mid-flat-left {
+    transform: translateY(50%) translateX(-50%) translateZ(-20rem);
+}
+
+#mid-flat-right {
+    transform: translateY(50%) translateX(150%) translateZ(-20rem);
+}
+
+#mid-left {
+   transform: translateY(50%) translateX(0%) translateZ(-5rem) rotateY(90deg);
+}
+
+#mid-right {
+    transform: translateY(50%) translateX(100%) translateZ(-5rem) rotateY(90deg);
+}
+
+#close-flat-center {
+    transform: translateY(50%) translateX(50%) translateZ(10rem);
+}
+
+#close-flat-left {
+    transform: translateY(50%) translateX(-50%) translateZ(10rem);
+}
+
+#close-flat-right {
+    transform: translateY(50%) translateX(150%) translateZ(10rem);
+}
+
+#close-left {
+   transform: translateY(50%) translateX(0%) translateZ(25rem) rotateY(90deg);
+}
+
+#close-right {
+    transform: translateY(50%) translateX(100%) translateZ(25rem) rotateY(90deg);
+}
